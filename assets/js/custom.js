@@ -162,7 +162,7 @@ $(document).ready(function () {
     $(".sort-grid-1").on('click', function () {
         $(".all-list-sh").addClass("view-grid");
     });
-
+ 
     //TOOL TIP
     $('[data-toggle="tooltip"]').tooltip();
 

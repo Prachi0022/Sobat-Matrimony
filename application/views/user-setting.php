@@ -16,10 +16,6 @@
 								<li><a href="<?php echo base_url()?>user-plan"><i class="fa fa-money"
 											aria-hidden="true"></i>Plan</a>
 								</li>
-								<li><a href="" data-bs-toggle="modal"
-										data-bs-target="#review"><i class="fa fa-edit"
-											aria-hidden="true"></i>Add Review</a>
-								</li>
 								<li><a href="<?php echo base_url()?>user-setting" class="act"><i class="fa fa-cog"
 											aria-hidden="true"></i>Setting</a></li>
 								<li><a href="<?php echo base_url()?>login"><i class="fa fa-sign-out"

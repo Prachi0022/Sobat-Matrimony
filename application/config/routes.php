@@ -77,3 +77,9 @@ $route['user-chat'] = 'welcome/user_chat';
 $route['user-interests'] = 'welcome/user_interests';
 $route['user-setting'] = 'welcome/user_setting';
 
+$route['vendor-sign-up'] = 'welcome/vendor_regi';
+$route['vendor-login'] = 'welcome/vendor_login';
+
+$route['vendor-profile'] = 'welcome/vendor_profile';
+$route['vendor-package'] = 'welcome/vendor_package';
+

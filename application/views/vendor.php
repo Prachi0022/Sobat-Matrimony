@@ -1,48 +1,237 @@
+<section>
+	<div class="all-pro-head">
+		<div class="container">
+			<div class="row">
+				<h1>Your one-stop hub for wedding vendors photographers, makeup artists, mandap decorators, caterers,
+					and more.</h1>
+				<div class="ban-search chosenini">
+					<form>
+						<ul>
+							<li class="sr-look w-4">
+								<div class="form-group">
+									<label>Search For Vendor</label>
+									<select class="chosen-select">
+										<option value="">Search For Vendor</option>
+										<option value="makeup-artists">Makeup Artists</option>
+										<option value="photographers">Photographers</option>
+										<option value="caterers">Caterers</option>
+										<option value="decorators">Decorators</option>
+										<option value="invitations">Invitations</option>
+										<option value="planners">Planners</option>
+										<option value="pandit">Pandit</option>
+										<option value="djs">DJs</option>
+										<option value="venues">Venues</option>
+										<option value="mehendi-artists">Mehendi Artists</option>
+										<option value="gifts">Gifts</option>
+										<option value="wedding-wear">Wedding Wear</option>
+										<option value="choreographers">Choreographers</option>
+
+									</select>
+								</div>
+							</li>
+							<li class="sr-cit w-4">
+								<div class="form-group">
+									<label>City</label>
+									<select class="chosen-select">
+										<option value="">Wedding City*</option>
+
+										<?php 
+                                                    $cities = [
+                                                        "Mumbai","Pune","Nagpur","Nashik","Aurangabad","Solapur","Amravati","Kolhapur",
+                                                        "Sangli","Jalgaon","Akola","Latur","Dhule","Ahmednagar","Chandrapur","Parbhani",
+                                                        "Nanded","Wardha","Beed","Bhandara","Osmanabad","Ratnagiri","Satara","Yavatmal",
+                                                        "Gondia","Hingoli","Washim","Palghar","Thane","Kalyan-Dombivli","Vasai-Virar",
+                                                        "Mira-Bhayandar","Ulhasnagar","Malegaon","Panvel"
+                                                    ];
+
+                                                    foreach ($cities as $city) {
+                                                        echo "<option value='$city'>$city</option>";
+                                                    }
+                                                ?>
+									</select>
+								</div>
+							</li>
+							<li class="sr-btn w-4">
+								<input type="submit" value="Find Vendor">
+							</li>
+						</ul>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--FILTER ON MOBILE VIEW-->
+	<div class="fil-mob fil-mob-act">
+		<h4>Profile filters <i class="fa fa-filter" aria-hidden="true"></i> </h4>
+	</div>
+</section>
+
 <!-- BLOG POSTS START -->
 <section class="home-acces-main">
-	<div class="hom-blog pt-90">
+	<div class="hom-blog">
 		<div class="container">
 			<div class="row">
 				<div class="home-tit">
 					<p>Shaadi Begins Here — Discover Trusted Wedding Vendors</p>
-					<h2><span>Vendors</span></h2>
+					<h2><span>Vendor Categories</span></h2>
 					<img class="leaf1" src="<?php echo base_url()?>assets/images/leaf/1.png" alt="" srcset="">
 					<span class="tit-ani-"></span>
 				</div>
-				<div class="blog">
-					<ul>
-						<li>
-							<div class="blog-box">
+				<div class="row">
+					<div class="col-md-4 col-lg-3">
+						<div class="db-nav">
+							<div class="db-nav-pro"><img src="<?php echo base_url()?>assets/images/profiles/12.jpg"
+									class="img-fluid" alt=""></div>
+							<div class="">
 								<a href="<?php echo base_url()?>vendor-list">
-									<img src="<?php echo base_url()?>assets/images/blog/1.jpg" alt="" loading="lazy">
+									<h5>Makeup Artists</h5> <span>10 ></span>
 								</a>
-								<h2>Wedding arrangements</h2>
-
-								<a href="<?php echo base_url()?>vendor-list" class="cta-dark"><span>View Details</span></a>
 							</div>
-						</li>
-						<li>
-							<div class="blog-box">
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-3">
+						<div class="db-nav">
+							<div class="db-nav-pro"><img src="<?php echo base_url()?>assets/images/profiles/12.jpg"
+									class="img-fluid" alt=""></div>
+							<div class="">
 								<a href="<?php echo base_url()?>vendor-list">
-									<img src="<?php echo base_url()?>assets/images/blog/2.jpg" alt="" loading="lazy">
+									<h5>Photographers</h5> <span>10 ></span>
 								</a>
-								<h2>Wedding arrangements</h2>
-
-								<a href="<?php echo base_url()?>vendor-list" class="cta-dark"><span>View Details</span></a>
 							</div>
-						</li>
-						<li>
-							<div class="blog-box">
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-3">
+						<div class="db-nav">
+							<div class="db-nav-pro"><img src="<?php echo base_url()?>assets/images/profiles/12.jpg"
+									class="img-fluid" alt=""></div>
+							<div class="">
 								<a href="<?php echo base_url()?>vendor-list">
-									<img src="<?php echo base_url()?>assets/images/blog/3.jpg" alt="" loading="lazy">
+									<h5>Planners</h5> <span>10 ></span>
 								</a>
-								<h2>Wedding arrangements</h2>
-
-								<a href="<?php echo base_url()?>vendor-list" class="cta-dark"><span>View Details</span></a>
 							</div>
-						</li>
-					</ul>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-3">
+						<div class="db-nav">
+							<div class="db-nav-pro"><img src="<?php echo base_url()?>assets/images/profiles/12.jpg"
+									class="img-fluid" alt=""></div>
+							<div class="">
+								<a href="<?php echo base_url()?>vendor-list">
+									<h5>Decorators</h5> <span>10 ></span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-3">
+						<div class="db-nav">
+							<div class="db-nav-pro"><img src="<?php echo base_url()?>assets/images/profiles/12.jpg"
+									class="img-fluid" alt=""></div>
+							<div class="">
+								<a href="<?php echo base_url()?>vendor-list">
+									<h5>Caterers</h5> <span>10 ></span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-3">
+						<div class="db-nav">
+							<div class="db-nav-pro"><img src="<?php echo base_url()?>assets/images/profiles/12.jpg"
+									class="img-fluid" alt=""></div>
+							<div class="">
+								<a href="<?php echo base_url()?>vendor-list">
+									<h5>Venues</h5> <span>10 ></span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-3">
+						<div class="db-nav">
+							<div class="db-nav-pro"><img src="<?php echo base_url()?>assets/images/profiles/12.jpg"
+									class="img-fluid" alt=""></div>
+							<div class="">
+								<a href="<?php echo base_url()?>vendor-list">
+									<h5>Mehendi Artists</h5> <span>10 ></span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-3">
+						<div class="db-nav">
+							<div class="db-nav-pro"><img src="<?php echo base_url()?>assets/images/profiles/12.jpg"
+									class="img-fluid" alt=""></div>
+							<div class="">
+								<a href="<?php echo base_url()?>vendor-list">
+									<h5>Invitations</h5> <span>10 ></span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-3">
+						<div class="db-nav">
+							<div class="db-nav-pro"><img src="<?php echo base_url()?>assets/images/profiles/12.jpg"
+									class="img-fluid" alt=""></div>
+							<div class="">
+								<a href="<?php echo base_url()?>vendor-list">
+									<h5>Djs</h5> <span>10 ></span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-3">
+						<div class="db-nav">
+							<div class="db-nav-pro"><img src="<?php echo base_url()?>assets/images/profiles/12.jpg"
+									class="img-fluid" alt=""></div>
+							<div class="">
+								<a href="<?php echo base_url()?>vendor-list">
+									<h5>Wedding Wear</h5> <span>10 ></span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-3">
+						<div class="db-nav">
+							<div class="db-nav-pro"><img src="<?php echo base_url()?>assets/images/profiles/12.jpg"
+									class="img-fluid" alt=""></div>
+							<div class="">
+								<a href="<?php echo base_url()?>vendor-list">
+									<h5>Gifts</h5> <span>10 ></span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-3">
+						<div class="db-nav">
+							<div class="db-nav-pro"><img src="<?php echo base_url()?>assets/images/profiles/12.jpg"
+									class="img-fluid" alt=""></div>
+							<div class="">
+								<a href="<?php echo base_url()?>vendor-list">
+									<h5>Pandit</h5> <span>10 ></span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-3">
+						<div class="db-nav">
+							<div class="db-nav-pro"><img src="<?php echo base_url()?>assets/images/profiles/12.jpg"
+									class="img-fluid" alt=""></div>
+							<div class="">
+								<a href="<?php echo base_url()?>vendor-list">
+									<h5>Choreographers</h5> <span>10 ></span>
+								</a>
+							</div>
+						</div>
+					</div>
+
 				</div>
+				<!-- <div class="page-nation">
+					<ul class="pagination pagination-sm">
+						<li class="page-item"><a class="page-link" href="#!">Previous</a></li>
+						<li class="page-item active"><a class="page-link" href="#!">1</a></li>
+						<li class="page-item"><a class="page-link" href="#!">2</a></li>
+						<li class="page-item"><a class="page-link" href="#!">3</a></li>
+						<li class="page-item"><a class="page-link" href="#!">Next</a></li>
+					</ul>
+				</div> -->
 			</div>
 		</div>
 	</div>
@@ -79,18 +268,10 @@
 			<div class="col-md-4 fot-soc">
 				<h4>SOCIAL MEDIA</h4>
 				<ul>
-					<li><a href="#!"><img
-								src="<?php echo base_url()?>assets/images/social/1.png"
-								alt=""></a></li>
-					<li><a href="#!"><img
-								src="<?php echo base_url()?>assets/images/social/2.png"
-								alt=""></a></li>
-					<li><a href="#!"><img
-								src="<?php echo base_url()?>assets/images/social/3.png"
-								alt=""></a></li>
-					<li><a href="#!"><img
-								src="<?php echo base_url()?>assets/images/social/5.png"
-								alt=""></a></li>
+					<li><a href="#!"><img src="<?php echo base_url()?>assets/images/social/1.png" alt=""></a></li>
+					<li><a href="#!"><img src="<?php echo base_url()?>assets/images/social/2.png" alt=""></a></li>
+					<li><a href="#!"><img src="<?php echo base_url()?>assets/images/social/3.png" alt=""></a></li>
+					<li><a href="#!"><img src="<?php echo base_url()?>assets/images/social/5.png" alt=""></a></li>
 				</ul>
 			</div>
 		</div>

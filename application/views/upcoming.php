@@ -31,45 +31,49 @@
 				</div> -->
 				<ul>
 					<li>
-						<div> <a href="">
+						<div> <a href="" data-bs-toggle="modal" data-bs-target="#upcoming">
 								<img src="<?php echo base_url()?>assets/images/profiles/6.jpg" alt="" loading="lazy">
-								<a href="" data-bs-toggle="modal"
-										data-bs-target="#upcoming"><h4>Event 1</h4></a>
+								<a href="" data-bs-toggle="modal" data-bs-target="#upcoming">
+									<h4>Event 1</h4>
+								</a> 
 								<p>17 Nov 2025</p>
 							</a>
 						</div>
 					</li>
 					<li>
-						<div> <a href="">
+						<div> <a href="" data-bs-toggle="modal" data-bs-target="#upcoming">
 								<img src="<?php echo base_url()?>assets/images/profiles/6.jpg" alt="" loading="lazy">
-								<a href="" data-bs-toggle="modal"
-										data-bs-target="#upcoming"><h4>Event 2</h4></a>
-								<p>17 Nov 2025</p>
-							</a>
-						</div>
-					</li>   
-					<li>
-						<div> <a href="">
-								<img src="<?php echo base_url()?>assets/images/profiles/6.jpg" alt="" loading="lazy">
-								<a href="" data-bs-toggle="modal"
-										data-bs-target="#upcoming"><h4>Event 3</h4></a>
+								<a href="" data-bs-toggle="modal" data-bs-target="#upcoming">
+									<h4>Event 2</h4>
+								</a>
 								<p>17 Nov 2025</p>
 							</a>
 						</div>
 					</li>
 					<li>
-						<div> <a href="">
+						<div> <a href="" data-bs-toggle="modal" data-bs-target="#upcoming">
 								<img src="<?php echo base_url()?>assets/images/profiles/6.jpg" alt="" loading="lazy">
-								<a href="" data-bs-toggle="modal"
-										data-bs-target="#upcoming"><h4>Event 4</h4></a>
+								<a href="" data-bs-toggle="modal" data-bs-target="#upcoming">
+									<h4>Event 3</h4>
+								</a>
 								<p>17 Nov 2025</p>
 							</a>
 						</div>
 					</li>
-					
+					<li>
+						<div> <a href="" data-bs-toggle="modal" data-bs-target="#upcoming">
+								<img src="<?php echo base_url()?>assets/images/profiles/6.jpg" alt="" loading="lazy">
+								<a href="" data-bs-toggle="modal" data-bs-target="#upcoming">
+									<h4>Event 4</h4>
+								</a>
+								<p>17 Nov 2025</p>
+							</a>
+						</div>
+					</li>
 				</ul>
 			</div>
 		</div>
 	</div>
 </section>
 <!-- END -->
+ 

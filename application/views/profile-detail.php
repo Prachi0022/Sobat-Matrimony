@@ -6,7 +6,8 @@
 				<div class="profile">
 					<div class="pg-pro-big-im">
 						<div class="s1">
-							<img src="<?php echo base_url()?>assets/images/profiles/profile-large.jpg" loading="lazy" class="pro" alt="">
+							<img src="<?php echo base_url()?>assets/images/profiles/profile-large.jpg" loading="lazy"
+								class="pro" alt="">
 						</div>
 						<div class="s3">
 							<a href="#!" class="cta fol cta-chat">Chat now</a>
@@ -26,25 +27,29 @@
 							<ul>
 								<li>
 									<div>
-										<img src="<?php echo base_url()?>assets/images/icon/pro-city.png" loading="lazy" alt="">
+										<img src="<?php echo base_url()?>assets/images/icon/pro-city.png" loading="lazy"
+											alt="">
 										<span>City: <strong>New York</strong></span>
 									</div>
 								</li>
 								<li>
 									<div>
-										<img src="<?php echo base_url()?>assets/images/icon/pro-age.png" loading="lazy" alt="">
+										<img src="<?php echo base_url()?>assets/images/icon/pro-age.png" loading="lazy"
+											alt="">
 										<span>Age: <strong>21</strong></span>
 									</div>
 								</li>
 								<li>
 									<div>
-										<img src="<?php echo base_url()?>assets/images/icon/pro-city.png" loading="lazy" alt="">
+										<img src="<?php echo base_url()?>assets/images/icon/pro-city.png" loading="lazy"
+											alt="">
 										<span>Height: <strong>5.7</strong></span>
 									</div>
 								</li>
 								<li>
 									<div>
-										<img src="<?php echo base_url()?>assets/images/icon/pro-city.png" loading="lazy" alt="">
+										<img src="<?php echo base_url()?>assets/images/icon/pro-city.png" loading="lazy"
+											alt="">
 										<span>Job: <strong>Working</strong></span>
 									</div>
 								</li>
@@ -67,22 +72,24 @@
 							<div id="image-gallery">
 								<div class="pro-gal-imag">
 									<div class="img-wrapper">
-										<a href="#!"><img src="<?php echo base_url()?>assets/images/profiles/1.jpg" class="img-responsive" alt=""></a>
+										<a href="#!"><img src="<?php echo base_url()?>assets/images/profiles/1.jpg"
+												class="img-responsive" alt=""></a>
 										<div class="img-overlay"><i class="fa fa-arrows-alt" aria-hidden="true"></i>
 										</div>
 									</div>
 								</div>
 								<div class="pro-gal-imag">
 									<div class="img-wrapper">
-										<a href="#!"><img src="<?php echo base_url()?>assets/images/profiles/6.jpg" class="img-responsive" alt=""></a>
+										<a href="#!"><img src="<?php echo base_url()?>assets/images/profiles/6.jpg"
+												class="img-responsive" alt=""></a>
 										<div class="img-overlay"><i class="fa fa-arrows-alt" aria-hidden="true"></i>
 										</div>
 									</div>
 								</div>
 								<div class="pro-gal-imag">
 									<div class="img-wrapper">
-										<a href="#!"><img src="<?php echo base_url()?>assets/images/profiles/14.jpg" class="img-responsive"
-												alt=""></a>
+										<a href="#!"><img src="<?php echo base_url()?>assets/images/profiles/14.jpg"
+												class="img-responsive" alt=""></a>
 										<div class="img-overlay"><i class="fa fa-arrows-alt" aria-hidden="true"></i>
 										</div>
 									</div>
@@ -110,18 +117,18 @@
 							<h3>Personal information</h3>
 							<ul>
 								<li><b>Name:</b> Angelina Jolie</li>
-                                <li><b>Date of birth:</b>03 Jan 1998</li>
+								<li><b>Date of birth:</b>03 Jan 1998</li>
 								<li><b>Age:</b> 24</li>
-                                <li><b>Gender:</b>Female</li>
-                                <li><b>City:</b>Mumbai</li>
-                                <li><b>Eating Habit:</b>Non-Vegetarian</li>
+								<li><b>Gender:</b>Female</li>
+								<li><b>City:</b>Mumbai</li>
+								<li><b>Eating Habit:</b>Non-Vegetarian</li>
 								<li><b>Marital Status:</b>Unmarried</li>
-                                <li><b>Religion:</b> Any</li>
-                                <li><b>Caste:</b> Any</li>
-                                <li><b>Sub-caste:</b> Any</li>
+								<li><b>Religion:</b> Any</li>
+								<li><b>Caste:</b> Any</li>
+								<li><b>Sub-caste:</b> Any</li>
 								<li><b>Height:</b>167cm</li>
 								<li><b>Blood Group:</b>B+</li>
-								
+
 
 								<li><b>Higher Eduation:</b> MSC Computer Science</li>
 								<li><b>Position:</b> Web developer</li>
@@ -148,7 +155,7 @@
 
 					<!-- PROFILE lHS -->
 					<div class="rhs">
-						<!-- RELATED PROFILES --> 
+						<!-- RELATED PROFILES -->
 						<div class="slid-inn pr-bio-c wedd-rel-pro">
 							<h3>Related profiles</h3>
 							<ul class="slider3">
@@ -220,6 +227,8 @@
 							</ul>
 						</div>
 						<!-- END RELATED PROFILES -->
+						<!-- <a href="#!" class="cta">Report User</a> -->
+
 					</div>
 					<!-- END PROFILE lHS -->
 				</div>

@@ -146,7 +146,7 @@ class Welcome extends CI_Controller {
 	public function user_profile()
 	{
 		$this->load->view('web/header');
-		$this->load->view('user-profile');
+		$this->load->view('user-dash');
 		$this->load->view('web/footer2');
 	}
 
@@ -178,4 +178,31 @@ class Welcome extends CI_Controller {
 		$this->load->view('web/footer2');
 	}
 
+	public function vendor_profile()
+	{
+		$this->load->view('web/header');
+		$this->load->view('vendorprofile');
+		$this->load->view('web/footer');
+	}
+
+	public function vendor_regi()
+	{
+		$this->load->view('web/header');
+		$this->load->view('vendor-regi');
+		$this->load->view('web/footer');
+	}
+
+	public function vendor_login()
+	{
+		$this->load->view('web/header');
+		$this->load->view('vendor-login');
+		$this->load->view('web/footer');
+	}
+
+	public function vendor_package()
+	{
+		$this->load->view('web/header');
+		$this->load->view('vendorpackage');
+		$this->load->view('web/footer');
+	}
 }

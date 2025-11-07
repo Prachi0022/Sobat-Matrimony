@@ -3229,8 +3229,12 @@ table td{}
     font-size: 14px;
     font-weight: 600;
     border-radius: 2px;
-    background: linear-gradient(45deg, rgb(205, 0, 152), rgb(225, 77, 97) 80%);
+    /* background: linear-gradient(45deg, rgb(205, 0, 152), rgb(225, 77, 97) 80%); */
     margin: 0px auto;width:auto;
+}
+
+.w-4{
+    width: 33.33% !important;
 }
 
 .all-pro-head a i {
@@ -3283,9 +3287,9 @@ table td{}
 .pro-detail h4 {
     font-size: 20px;
     padding-bottom: 10px;
-    text-overflow: ellipsis;
+    /* text-overflow: ellipsis;
     white-space: pre;
-    overflow: hidden;
+    overflow: hidden; */
     position: relative;
     font-weight: 600;
     text-align: left;
@@ -3294,9 +3298,9 @@ table td{}
 
 .pro-detail h4 a {
     color: rgb(33, 37, 41);
-    font-weight: 600;
+    font-weight: 800;
     font-family: var(--tit-font);
-    font-size: 26px;
+    font-size: 18px;
 }
 
 .pro-detail p {
@@ -3678,7 +3682,7 @@ span.mail::before {
     font-size: 12px;
     font-weight: 600;
     padding: 5px 10px;
-    border-radius: 30px;
+    border-radius: 10px;
     float: left;
     margin: 0 8px 8px 0;
     cursor: pointer;
@@ -10851,6 +10855,10 @@ h2.db-tit{
         margin: 0px 0px 0px 1%;
     }
 
+    .w-4{
+        width: 100% !important;
+    }
+
     .ban-search ul li.sr-btn {
         width: 100%;
         margin-top: 5px;
@@ -12325,3 +12333,81 @@ h2.db-tit{
 .blog-subsc ul li {
     text-align: justify;
 }
+
+
+.vendor-card {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    background: #fff;
+    position: relative;
+}
+.vendor-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+.badge-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #00c48c;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.pro-img {
+    position: relative;
+}
+.vendor-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.shortlist-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #fff;
+    border: none;
+    color: #e91e63;
+    font-weight: 600;
+    padding: 5px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.vendor-title a {
+    text-decoration: none;
+    color: #111;
+    font-weight: 600;
+}
+.vendor-location {
+    color: #555;
+    font-size: 14px;
+}
+.vendor-price {
+    font-weight: 700;
+    color: #000;
+}
+.vendor-service {
+    color: #888;
+    font-size: 14px;
+}
+.vendor-rating {
+    font-size: 14px;
+    color: #555;
+}
+.vendor-actions .btn {
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 6px 0;
+}
+
+
+
+/* ==============================Vendor detail============================== */
+
+ 

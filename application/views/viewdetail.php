@@ -18,12 +18,12 @@
 		<div class="container">
 			<div class="inn">
 				<div class="row col-12">
+
 					<div class="col-7">
 						<!--BIG POST START-->
 						<div class="blog-home-box">
 							<div class="im">
 								<img src="<?php echo base_url()?>assets/images/couples/9.jpg" alt="" loading="lazy">
-
 							</div>
 							<div class="txt form-login">
 								<form>
@@ -84,18 +84,17 @@
 										<li>
 											<h5>Location: <span>Pune</span></h5>
 										</li>
-
-										<li>
-											<h5>Capacity: <span>500</span></h5>
-										</li>
 										<li>
 											<h5>Avg Price: <span>₹ 50000</span></h5>
 										</li>
 										<li>
-											<h5>Email: <span><a href="mailto:example@gmail.com">example@gmail.com</a></span></h5>
+											<h5>Email: <span><a
+														href="mailto:example@gmail.com">example@gmail.com</a></span>
+											</h5>
 										</li>
 										<li>
-											<h5>Phone No.: <span><a href="tel:+91 9087654321">+91 9087654321</a></span></h5>
+											<h5>Phone No.: <span><a href="tel:+91 9087654321">+91 9087654321</a></span>
+											</h5>
 										</li>
 									</ul>
 

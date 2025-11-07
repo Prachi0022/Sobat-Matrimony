@@ -104,7 +104,7 @@
 	<!-- END -->
 
 	<!-- CONTACT EXPERT -->
-	
+
 	<!-- END -->
 
 	<!-- MAIN MENU -->
@@ -165,6 +165,7 @@
 									</div>
 								</div>
 							</li>
+							<li><a href="<?php echo base_url()?>vendor-sign-up">Vendor Register</a></li>
 							<li><a href="<?php echo base_url()?>membership">Plans</a></li>
 							<li class="smenu-pare">
 								<span class="smenu">Event</span>
@@ -184,8 +185,10 @@
 					<!-- USER PROFILE -->
 					<div class="al">
 						<div class="head-pro"> <a href="<?php echo base_url()?>user-profile">
-							<img src="<?php echo base_url()?>assets/images/profiles/1.jpg" alt="" loading="lazy"></a>
-							<a href="<?php echo base_url()?>user-profile"><h4>Ashley emyy</h4>
+								<img src="<?php echo base_url()?>assets/images/profiles/1.jpg" alt=""
+									loading="lazy"></a>
+							<a href="<?php echo base_url()?>user-profile">
+								<h4>Ashley emyy</h4>
 							</a>
 						</div>
 					</div>
@@ -230,7 +233,7 @@
 				<li><a href="<?php echo base_url()?>basicinfo">Register</a></li>
 				<li><a href="<?php echo base_url()?>contact-us">Contact</a></li>
 			</ul>
-			
+
 			<div class="menu-pop-soci">
 				<ul>
 					<li><a href="#!"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>

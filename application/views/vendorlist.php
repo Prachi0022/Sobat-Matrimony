@@ -32,10 +32,19 @@
 						<div class="form-group">
 							<select class="chosen-select">
 								<option value="">Category*</option>
-								<option value="Photography & Video">Photography & Video</option>
-								<option value="Food Catering">Food Catering</option>
-								<option value="Decorations">Decorations</option>
-								<option value="Wedding Halls">Wedding Halls</option>
+								<option value="makeup-artists">Makeup Artists</option>
+								<option value="photographers">Photographers</option>
+								<option value="caterers">Caterers</option>
+								<option value="decorators">Decorators</option>
+								<option value="invitations">Invitations</option>
+								<option value="planners">Planners</option>
+								<option value="pandit">Pandit</option>
+								<option value="djs">DJs</option>
+								<option value="venues">Venues</option>
+								<option value="mehendi-artists">Mehendi Artists</option>
+								<option value="gifts">Gifts</option>
+								<option value="wedding-wear">Wedding Wear</option>
+								<option value="choreographers">Choreographers</option>
 							</select>
 						</div>
 					</div>
@@ -106,131 +115,44 @@
 										</select>
 									</div>
 								</li>
-								<li>
-									<div class="sort-grid sort-grid-1">
-										<i class="fa fa-th-large" aria-hidden="true"></i>
-									</div>
-								</li>
-								<li>
-									<div class="sort-grid sort-grid-2 act">
-										<i class="fa fa-bars" aria-hidden="true"></i>
-									</div>
-								</li>
+
 							</ul>
 						</div>
 					</div>
-					<div class="all-list-sh">
+					<div class="all-list-sh view-grid">
 						<ul>
 							<li>
-								<div class="all-pro-box user-avil-onli" data-useravil="avilyes"
-									data-aviltxt="Available online">
-									<!--PROFILE IMAGE-->
-									<div class="pro-img">
+								<div class="all-pro-box vendor-card">
+									<!-- Most Preferred Badge -->
+
+									<!-- Vendor Image -->
+									<div class="pro-img position-relative">
 										<a href="<?php echo base_url()?>vendor-detail">
-											<img src="<?php echo base_url()?>assets/images/profiles/4.jpg" alt="">
+											<img src="<?php echo base_url()?>assets/images/profiles/4.jpg"
+												alt="Bloom Bridal Studio" class="vendor-img">
 										</a>
 									</div>
-									<!--END PROFILE IMAGE-->
 
-									<!--PROFILE NAME-->
-									<div class="pro-detail">
-										<h4><a href="<?php echo base_url()?>vendor-detail">Photography & Video</a></h4>
-										<div class="pro-bio">
-											<h6>
-												<i class="fa fa-map-marker" aria-hidden="true"></i> Location :
-											</h6>
+									<!-- Vendor Details -->
+									<div class="pro-detail p-3">
+										<h4 class="vendor-title mb-1">
+											<a href="<?php echo base_url()?>vendor-detail">Bloom Bridal Studio</a>
+										</h4>
+										<div class="d-flex justify-content-between align-items-center">
+											<span class="vendor-location"><i class="fa fa-map-marker"></i> Aminjikarai,
+												Chennai</span>
+											<span class="vendor-price">₹15,000</span>
 										</div>
+										<!-- <div class="vendor-service mt-1">Bridal Makeup</div> -->
 
-										<div class="links">
-											<a href="<?php echo base_url()?>vendor-detail">More detaiils</a>
+										<!-- Action Buttons -->
+										<div class="vendor-actions d-flex justify-content-between mt-3">
+											<a href="#" class="btn btn-outline-dark w-50 me-1">Send enquiry</a>
+											<a href="#" class="btn btn-outline-danger w-50 ms-1">View contact</a>
 										</div>
 									</div>
-									<!--END PROFILE NAME-->
 								</div>
-							</li>
 
-							<li>
-								<div class="all-pro-box user-avil-onli" data-useravil="avilyes"
-									data-aviltxt="Available online">
-									<!--PROFILE IMAGE-->
-									<div class="pro-img">
-										<a href="<?php echo base_url()?>vendor-detail">
-											<img src="<?php echo base_url()?>assets/images/profiles/4.jpg" alt="">
-										</a>
-									</div>
-									<!--END PROFILE IMAGE-->
-
-									<!--PROFILE NAME-->
-									<div class="pro-detail">
-										<h4><a href="<?php echo base_url()?>vendor-detail">Food Catering</a></h4>
-										<div class="pro-bio">
-											<h6>
-												<i class="fa fa-map-marker" aria-hidden="true"></i> Location :
-											</h6>
-										</div>
-
-										<div class="links">
-											<a href="<?php echo base_url()?>vendor-detail">More detaiils</a>
-										</div>
-									</div>
-									<!--END PROFILE NAME-->
-								</div>
-							</li>
-
-							<li>
-								<div class="all-pro-box user-avil-onli" data-useravil="avilyes"
-									data-aviltxt="Available online">
-									<!--PROFILE IMAGE-->
-									<div class="pro-img">
-										<a href="<?php echo base_url()?>vendor-detail">
-											<img src="<?php echo base_url()?>assets/images/profiles/4.jpg" alt="">
-										</a>
-									</div>
-									<!--END PROFILE IMAGE-->
-
-									<!--PROFILE NAME-->
-									<div class="pro-detail">
-										<h4><a href="<?php echo base_url()?>vendor-detail">Decorations</a></h4>
-										<div class="pro-bio">
-											<h6>
-												<i class="fa fa-map-marker" aria-hidden="true"></i> Location :
-											</h6>
-										</div>
-
-										<div class="links">
-											<a href="<?php echo base_url()?>vendor-detail">More detaiils</a>
-										</div>
-									</div>
-									<!--END PROFILE NAME-->
-								</div>
-							</li>
-
-							<li>
-								<div class="all-pro-box user-avil-onli" data-useravil="avilyes"
-									data-aviltxt="Available online">
-									<!--PROFILE IMAGE-->
-									<div class="pro-img">
-										<a href="<?php echo base_url()?>vendor-detail">
-											<img src="<?php echo base_url()?>assets/images/profiles/4.jpg" alt="">
-										</a>
-									</div>
-									<!--END PROFILE IMAGE-->
-
-									<!--PROFILE NAME-->
-									<div class="pro-detail">
-										<h4><a href="<?php echo base_url()?>vendor-detail">Wedding Halls</a></h4>
-										<div class="pro-bio">
-											<h6>
-												<i class="fa fa-map-marker" aria-hidden="true"></i> Location :
-											</h6>
-										</div>
-
-										<div class="links">
-											<a href="<?php echo base_url()?>vendor-detail">More detaiils</a>
-										</div>
-									</div>
-									<!--END PROFILE NAME-->
-								</div>
 							</li>
 
 						</ul>

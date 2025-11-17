@@ -9,13 +9,23 @@
 					<div class="inn">
 						<div class="rhs">
 							<div class="form-login">
+								<!-- Wizard Step Indicators -->
+								<div class="wizard-indicators">
+									<div class="step-indicator active" data-step="1">1</div>
+									<div class="step-indicator" data-step="2">2</div>
+									<div class="step-indicator" data-step="3">3</div>
+									<div class="step-indicator" data-step="4">4</div>
+									<div class="step-indicator" data-step="5">5</div>
+									<div class="step-indicator" data-step="6">6</div>
+								</div>
 								<form action="<?php echo base_url()?>Mail/basicinfos" id="registerForm" method="post">
-									<!--PROFILE BIO-->
-									<div class="edit-pro-parti">
-										<div class="form-tit">
-											<h4>Registration</h4> 
-											<h1>Basic Information</h1>
-										</div>
+									<!-- Step 1: Basic Information -->
+									<div class="wizard-step" id="step-1">
+										<div class="edit-pro-parti">
+											<div class="form-tit">
+												<h4>Registration</h4>
+												<h1>Basic Information</h1>
+											</div>
 										<div class="row">
 											<div class="col-md-6 form-group">
 												<label class="lb">Name:</label>
@@ -26,7 +36,7 @@
 											<div class="col-md-6 form-group">
 												<label class="lb">Email Id:</label>
 												<input type="email" class="form-control"
-													placeholder="example@gmail.com" name="email"required>
+													placeholder="example@gmail.com" name="email"required> 
 											</div>
 											<div class="col-md-6 form-group">
 												<label class="lb">Gender:</label>
@@ -289,13 +299,13 @@
 
 										</div>
 									</div>
-									<!--END PROFILE BIO-->
-									<!--PROFILE BIO-->
-									<div class="edit-pro-parti">
-										<div class="form-tit">
-											<h4></h4>
-											<h1>Persional Information</h1>
-										</div>
+									<!-- Step 2: Personal Information -->
+									<div class="wizard-step" id="step-2" style="display: none;">
+										<div class="edit-pro-parti">
+											<div class="form-tit">
+												<h4></h4>
+												<h1>Personal Information</h1>
+											</div>
 										<div class="row">
 											<div class="col-4 form-group">
 												<label class="lb">Religion:</label>
@@ -463,12 +473,13 @@
 											</div>
 										</div>
 									</div>
-									<!--END PROFILE BIO-->
-									<!--PROFILE BIO-->
-									<div class="edit-pro-parti">
-										<div class="form-tit">
-											<h1>Lifestyle</h1>
-										</div>
+									<!-- Step 3: Lifestyle -->
+									<div class="wizard-step" id="step-3" style="display: none;">
+										<div class="edit-pro-parti">
+											<div class="form-tit">
+												<h4></h4>
+												<h1>Lifestyle</h1>
+											</div>
 										<div class="row">
 											<div class="col-6 form-group">
 												<label class="lb">Eating Habit:</label>
@@ -505,12 +516,13 @@
 											</div>
 										</div>
 									</div>
-									<!--END PROFILE BIO-->
-									<!--PROFILE BIO-->
-									<div class="edit-pro-parti">
-										<div class="form-tit">
-											<h1>Family Information </h1>
-										</div>
+									<!-- Step 4: Family Information -->
+									<div class="wizard-step" id="step-4" style="display: none;">
+										<div class="edit-pro-parti">
+											<div class="form-tit">
+												<h4></h4>
+												<h1>Family Information</h1>
+											</div>
 										<div class="row">
 											<div class="col-md-6 form-group">
 												<label class="lb">Members of your family:</label>
@@ -555,12 +567,13 @@
 										</div>
 
 									</div>
-									<!--END PROFILE BIO-->
-									<!--PROFILE BIO-->
-									<div class="edit-pro-parti">
-										<div class="form-tit">
-											<h1>Future Plan(Career & Family)</h1>
-										</div>
+									<!-- Step 5: Future Plan(Career & Family) -->
+									<div class="wizard-step" id="step-5" style="display: none;">
+										<div class="edit-pro-parti">
+											<div class="form-tit">
+												<h4></h4>
+												<h1>Future Plan(Career & Family)</h1>
+											</div>
 										<div class="row">
 											<div class="col-md-6 form-group">
 												<label class="lb">What are your future goals?:</label>
@@ -647,21 +660,27 @@
 											</div>
 										</div>
 									</div>
-									<!--END PROFILE BIO-->
-									<!--PROFILE BIO-->
-									<div class="edit-pro-parti">
-										<div class="form-tit">
-											<h4>interests</h4>
-											<h1>Any Other</h1>
-										</div>
-										<div class="form-group">
-											<label class="lb">Any other information you like to add:</label>
-											<textarea id="" class="form-control" name="addon"
-												placeholder="e.g., Hobbies, Achievements, Personal preferences"
-												required></textarea>
+									<!-- Step 6: Any Other -->
+									<div class="wizard-step" id="step-6" style="display: none;">
+										<div class="edit-pro-parti">
+											<div class="form-tit">
+												<h4>interests</h4>
+												<h1>Any Other</h1>
+											</div>
+											<div class="form-group">
+												<label class="lb">Any other information you like to add:</label>
+												<textarea id="" class="form-control" name="addon"
+													placeholder="e.g., Hobbies, Achievements, Personal preferences"
+													required></textarea>
+											</div>
 										</div>
 									</div>
-									<button type="submit" class="btn btn-primary">Submit</button>
+									<!-- Wizard Navigation Buttons -->
+									<div class="wizard-navigation">
+										<button type="button" id="prevBtn" class="btn btn-secondary" style="display: none;">Previous</button>
+										<button type="button" id="nextBtn" class="btn btn-primary">Next</button>
+										<button type="submit" id="submitBtn" class="btn btn-success" style="display: none;">Submit</button>
+									</div>
 								</form>
 							</div>
 						</div>
@@ -834,6 +853,65 @@
 			toggleChildFields();
 		});
 
+	</script>
+
+	<script>
+		$(document).ready(function () {
+			let currentStep = 1;
+			const totalSteps = 6;
+
+			function showStep(step) {
+				// Hide all steps
+				$('.wizard-step').hide();
+				// Show current step
+				$('#step-' + step).show();
+
+				// Update indicators
+				$('.step-indicator').removeClass('active');
+				$('.step-indicator[data-step="' + step + '"]').addClass('active');
+
+				// Update buttons
+				if (step === 1) {
+					$('#prevBtn').hide();
+				} else {
+					$('#prevBtn').show();
+				}
+
+				if (step === totalSteps) {
+					$('#nextBtn').hide();
+					$('#submitBtn').show();
+				} else {
+					$('#nextBtn').show();
+					$('#submitBtn').hide();
+				}
+			}
+
+			// Next button click
+			$('#nextBtn').click(function () {
+				if (currentStep < totalSteps) {
+					currentStep++;
+					showStep(currentStep);
+				}
+			});
+
+			// Previous button click
+			$('#prevBtn').click(function () {
+				if (currentStep > 1) {
+					currentStep--;
+					showStep(currentStep);
+				}
+			});
+
+			// Step indicator click
+			$('.step-indicator').click(function () {
+				const step = $(this).data('step');
+				currentStep = step;
+				showStep(currentStep);
+			});
+
+			// Initialize first step
+			showStep(currentStep);
+		});
 	</script>
 
 </body>
